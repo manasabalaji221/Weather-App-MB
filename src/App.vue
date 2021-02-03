@@ -77,7 +77,7 @@
           <div class="column" v-if="flag == 3">
             <h3>Daily Update:</h3>
             <div class="location-box">
-              {{ weather }}
+              
               <br />
               <div><b>Location: </b>{{weather.name}}, {{ weather.sys.country }}</div>
               <div><b>Date: </b>{{ dateBuilder() }}</div>
