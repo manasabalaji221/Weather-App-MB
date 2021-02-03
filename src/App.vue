@@ -55,7 +55,6 @@
           <div class="column" v-if="flag == 2">
             <h3>Hourly Update:</h3>
             <div class="location-box">
-              {{ weather }}
               <br />
               <div><b>Location: </b>{{weather.name}}, {{ weather.sys.country }}</div>
               <div><b>Date: </b>{{ dateBuilder() }}</div>
@@ -69,7 +68,9 @@
               <div><b>Feels like: </b>{{ Math.round(weather.main.feels_like) }}°f</div>
               <div><b>Weather: </b>{{ weather.weather[0].main }}</div>
               <div><b>Wind Speed: </b>{{ Math.round(weather.wind.speed) }}</div>
-
+              <br />
+              <b>JSON Data:</b>
+              {{ weather }}
             </div>
           </div>
 
@@ -90,7 +91,9 @@
               <div><b>Feels like: </b>{{ Math.round(weather.main.feels_like) }}°f</div>
               <div><b>Weather: </b>{{ weather.weather[0].main }}</div>
               <div><b>Wind Speed: </b>{{ Math.round(weather.wind.speed) }}</div>
-
+              <br />
+              <b>JSON Data:</b>
+              {{ weather }}
             </div>
           </div>
         </div>
